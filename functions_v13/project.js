@@ -1,3 +1,13 @@
 console.log("starting functions 13 video");
 
 console.log("hello");
+console.log("startbng fnnnnnnnnnnnnn");
+
+
+product = (num1,num2)=>num1*num1*num1
+document.write (product(2))
+    
+
+geeet = _=>document.write("hello good morning")
+
+greet()
