@@ -1,7 +1,7 @@
 console.log("starting functions 13 video.......");
 
 console.log("hi hello");
-console.log("startbng fnnnnnnnnnnnnn");
+console.log("start");
 
 
 product = (num1,num2)=>num1*num1*num1
