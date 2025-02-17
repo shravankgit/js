@@ -1,6 +1,6 @@
 console.log("starting functions 13 video.......");
 
-console.log("hello");
+console.log("hi hello");
 console.log("startbng fnnnnnnnnnnnnn");
 
 
