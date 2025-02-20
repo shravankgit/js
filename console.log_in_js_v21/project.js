@@ -8,10 +8,11 @@ console.table({name:"mmt",age:25,place:"bangalore"})
 console.assert(10>15,"condition false")
 console.count("called")
 console.count("called")
-let x = +prompt("enter a number")
-while(x!=10){
+let x = 2
+console.time("loop time:")
+while(x!=2){
     console.log("enter 10");
-    x = +prompt("enter a number")
+    x = 3
     console.count("called")
 }
 console.timeEnd("loop time:")
