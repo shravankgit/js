@@ -7,3 +7,8 @@ function change(evnt) {
     }
     fn.style.backgroundColor = "red"
 }
+
+
+function change(){
+    document.body.style.backgroundColor="yellow"
+}
