@@ -9,7 +9,11 @@
 
 var arr1 = [1, 2, 3, 4]
 var arr2 = [5, 6, 7, 8]
-var arr3 = [...arr1, ...arr2,]
+
+console.log([arr1, ...arr2]);
+
+
+var arr3 = [97, ...arr1, ...arr2, 88, 89]
 console.log(arr3);
 
 function add(a, b) {
