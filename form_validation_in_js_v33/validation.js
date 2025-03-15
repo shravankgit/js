@@ -1,4 +1,5 @@
 const form = document.getElementById("form")
+console.log(form);
 
 
 const uname = document.getElementById("uname")
@@ -13,6 +14,7 @@ const tandc = document.getElementById("tc")
 
 
 form.addEventListener("submit",(e)=>{
+    
     e.preventDefault()
     validate()
 })
