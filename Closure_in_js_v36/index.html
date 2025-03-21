@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <h1>Closure in Javascript</h1>
+    
+    <input type="button" onclick="updatecount()" value="click" >
+    
+    <p id="count">clicked:0</p>
+    
+    <script>
+        
+        
+    //     let count = 0
+    //    function updatecount(){
+            
+    //         count= count+1
+            
+    //         let p = document.getElementById("count")
+            
+    //         p.innerText = clicked:${count}
+            
+        // }
+        
+        
+        function updateCountSecure(){
+            let count = 0
+            
+             function inner(){
+                count= count
+                let p = document.getElementById("count")
+            p.innerText = clicked:${count}
+            
+             }
+             return inner
+        }
+        
+        let updatecount = updateCountSecure()
+        console.log(updatecount);
+        
+        
+        let updatecount2 = updateCountSecure()
+        
+        counter2()
+        counter2()
+
+        
+        let updatecount3 = updateCountSecure()
+        
+        counter3()
+        counter3()
+        
+        
+        // accessing variable of async function even its exectution completes or out
+        
+        // function outer() {
+        //     var x = 10;
+            
+        //     function inner() {
+        //         var y = 100;
+        //         console.log(x);
+        //     }
+            
+        //     inner();
+        // }
+        
+        // outer();
+        
+        
+        
+        // function outer(number1) {
+        //     var x = 10;
+            
+        //     function inner(number2) {
+        //         var number2 = 100;
+        //         console.log(number1);
+        //     }
+            
+        //     inner();
+        // }
+        
+        // var res = outer(5);
+        
+        
+        
+        
+        // function outer(num1){
+        //     var x = 10
+            
+        //     function inner(num2){
+                
+        //         console.log(num1+num2+x);
+                
+                
+        //     }
+            
+        //     return inner
+            
+        // }
+        
+        // var res = outer(7)
+        // res(8)
+        
+    </script>
+    
+  
+
+</body>
+<script src="project.js"></script>
+
+</html>

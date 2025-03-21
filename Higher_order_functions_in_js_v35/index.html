@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Series</title>
+</head>
+
+<body>
+    <h1>Higher order functions </h1>
+
+    <script>
+        // function first(fun) {
+        //     console.log(fun);
+
+        //     fun()
+        // }
+        // function second() {
+        //     console.log("this is second function");
+
+        // }
+
+        // first(second)
+
+
+        // var arr = [56, 8, 7, 10, 11];
+
+        // function square(arr) {
+        //     squares = []
+        //     for (ele of arr) {
+        //         let res = ele * ele;
+        //         squares.push(res)
+        //     }
+
+        //     return squares
+
+        //     console.log(squares);
+        // }
+
+
+        // function cube(arr) {
+        //     cube = []
+        //     for (ele of arr) {
+        //         let res = ele * ele * ele;
+        //         cubes.push(res)
+        //     }
+
+        //     return cubes
+        // }
+
+        // square(arr)
+
+        // let x = square(arr)
+        // console.log(x);
+
+        // let y = cube(arr)
+
+        // console.log(y);
+
+
+        var arr = [56, 8, 7, 10, 11];
+
+        function square(num) {
+            return num * num
+        }
+        function cube(num) {
+            return num * num * num
+        }
+
+        function increment(num) {
+            return num + 1
+        }
+
+        function anyoperation(arr, operation) {
+            let result = []
+            for (ele of arr) {
+                // result.push(operation(ele))
+                let temp = operation(ele)
+                result.push(temp)
+
+            }
+
+            return result
+        }
+
+        // console.log(arr);
+        // let x = anyoperation(arr, increment)
+        // console.log(x);
+        // x = anyoperation(arr, square)
+        // console.log(x);
+
+
+        function first(fun) {
+            return second
+        }
+
+        function second() {
+            console.log("this is second function");
+        }
+
+        // console.log( first());
+
+        first()()
+
+
+
+
+    </script>
+
+</body>
+<script src="project.js"></script>
+
+</html>

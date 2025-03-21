@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call,apply&bind</title>
+</head>
+<body>
+    <h1>call,apply&bind</h1>
+    <script>
+        
+            // var salary = 20000;
+            
+            // function getSalary(){
+            //     console.log(salary);
+                
+            // }
+            //  var obj = {}
+             
+            //  console.log(window);
+            
+             
+            // var salary = 20000;
+            
+            // function getSalary(a,b){
+                // console.log(this.salary);
+                // console.log(window.salary);
+                // console.log(a,b);
+                
+            // }
+            // var obj = {}
+            
+            // console.log(window);
+            
+            
+            
+            var myObject = {
+                salary :50000,
+               getSalary :function(a,b){
+                    console.log(this.salary)
+                    console.log(a,b)
+                },
+                
+                greet:function(wish){
+                    console.log(this.name,wish);
+                    
+                }
+                
+                
+                
+            }
+
+            myObject.getSalary(65,89)
+            
+            
+            employee1 = {
+                salary : 30000
+            }
+            
+            employee2 = {
+                salary : 70000
+            }
+            
+            employee3 = {
+                salary : 90000
+            }
+            
+            // getSalary.call(employee,67,690)
+            
+            // getSalary.call(employee2,56,550)
+            
+            // getSalary.apply(employee2,[67,78])
+            
+            //  var f1 = getSalary.bind(employee,66,770)
+             
+            //  f1()
+        
+            
+            myObject.getSalary.call(employee1,67,690)
+            
+            myObject.getSalary(65,89)
+            
+            
+            employee1 = {
+                salary : 30000
+            }
+            
+            employee2 = {
+                salary : 70000
+            }
+            
+            employee3 = {
+                salary : 90000
+            }
+            
+            // getSalary.call(employee,67,690)
+            
+             
+             
+             
+             
+             var employee = {
+                salary :50000,
+               getSalary :function(a,b){
+                    console.log(this.salary)
+                    console.log(a,b)
+                },
+                
+                greet:function(wish){
+                    console.log(this.name,wish);
+                    
+                }
+                
+                
+                
+            }
+            
+            myObject.getSalary(65,89)
+            
+            
+            employee1 = {
+                salary : 30000
+            }
+            
+            employee2 = {
+                salary : 70000
+            }
+            
+            employee3 = {
+                name : "mmt",
+                salary : 90000
+            }
+            
+            // employee.getSalary.call(employee,67,690)
+            
+            // employee.getSalary.apply(employee2,[67,78])
+            
+             var f1 = employee.greet.bind(employee3)
+        
+             
+             f1("good morning")
+             f1("good afternoon")
+        console.log(f1);
+        
+    </script>
+    
+  
+
+</body>
+<script src="project.js"></script>
+
+</html>
