@@ -12,10 +12,16 @@ var isValidPassword = false;
 var isValidCPassword = false;
 var isTCChecked = false;
 
+/* 
+
+    var(datatype) isValidName ? -- true / false (quesion) = false(binary datatype);
+
+*/
+
 
 uname.addEventListener("keyup",checkUserName) 
 form.addEventListener("submit", (e) => {
-    // e.preventDefault()
+    e.preventDefault()
     validate()
 })
 
@@ -79,7 +85,7 @@ function validate() {
     }
 }
 
-if(isValidName && isValidEmail && isValidPassword && isValidCPassword){
+if(isValidName || isValidEmail && isValidPassword && isValidCPassword){
 
     form.submit()
 }
